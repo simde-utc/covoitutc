@@ -6,3 +6,12 @@
     display: none;
     margin-top: 20px;
 }
+
+#dateTrajetBlock {
+    margin-top: 30px;
+}
+
+#nbPlaceBlock label {
+    margin-top: 30px;
+    display: block;
+}
