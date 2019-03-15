@@ -7,11 +7,15 @@
     margin-top: 20px;
 }
 
-#dateTrajetBlock {
+#rideDateBlock {
     margin-top: 30px;
 }
 
-#nbPlaceBlock label {
+#nbSeatsBlock label {
     margin-top: 30px;
     display: block;
+}
+
+#nbSeatsBlock {
+    margin-bottom: 30px;
 }
