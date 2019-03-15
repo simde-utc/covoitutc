@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS Passengers;
+DROP TABLE IF EXISTS Rides;
+DROP TABLE IF EXISTS Users;
+
 CREATE TABLE Users (
     email           VARCHAR PRIMARY KEY,
     ent_id          VARCHAR(10),
@@ -5,7 +9,7 @@ CREATE TABLE Users (
 );
 
 CREATE TABLE Rides (
-    id_ride         INT SERIAL PRIMARY KEY
+    id_ride         SERIAL PRIMARY KEY,
     departure       VARCHAR(50) NOT NULL,
     destination     VARCHAR(50) NOT NULL,
     day             DATE NOT NULL,
