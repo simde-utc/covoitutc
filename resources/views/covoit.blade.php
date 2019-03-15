@@ -9,6 +9,9 @@
             <h2>Proposer un trajet</h2>
 
             <form action="" method="post">
+                
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
                 <label for="depart">De</label>
                 <select name="depart" id="depart">
                     <option value="compiegne">Compiègne</option>
