@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/covoit', function () {
     return view('covoit');
 });
+
+Route::post('/covoit', 'RideController@store');
