@@ -1,0 +1,21 @@
+.content {
+    margin-top: 100px;
+}
+
+.houdini {
+    display: none;
+    margin-top: 20px;
+}
+
+#rideDateBlock {
+    margin-top: 30px;
+}
+
+#nbSeatsBlock label {
+    margin-top: 30px;
+    display: block;
+}
+
+#nbSeatsBlock {
+    margin-bottom: 30px;
+}
