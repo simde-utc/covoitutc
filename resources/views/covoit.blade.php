@@ -1,13 +1,6 @@
 @extends('layout')
 
 @section('content')
-        <p>
-            <?php
-                if(isset($req)) {
-                    print_r($req);
-                }
-            ?>
-        </p>
     <div class="content text-center">
         <button id="proposerTrajet" type="button" class="btn btn-primary" onclick="proposerTrajet()">Proposer un trajet</button>
         <button id="chercherTrajet" type="button" class="btn btn-primary" onclick="chercherTrajet()">Chercher un trajet</button>
