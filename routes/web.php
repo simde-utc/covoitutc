@@ -22,3 +22,5 @@ Route::get('/covoit', function () {
 Route::post('/covoit', 'RideController@store');
 
 Route::get('/profile', 'ProfileController@index');
+Route::get('/profile/create', 'ProfileController@create');
+Route::post('/profile/create', 'ProfileController@store');
