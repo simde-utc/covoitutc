@@ -20,3 +20,5 @@ Route::get('/covoit', function () {
 });
 
 Route::post('/covoit', 'RideController@store');
+
+Route::get('/profile', 'ProfileController@index');
