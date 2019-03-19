@@ -1,12 +1,20 @@
 @extends('layout')
 
 @section('content')
+        <p>
+            <?php
+                if(isset($req)) {
+                    print_r($req);
+                }
+            ?>
+        </p>
     <div class="content text-center">
         <button id="proposerTrajet" type="button" class="btn btn-primary" onclick="proposerTrajet()">Proposer un trajet</button>
         <button id="chercherTrajet" type="button" class="btn btn-primary" onclick="chercherTrajet()">Chercher un trajet</button>
         
         <div id="addRide" class="houdini">
-            <h2>Proposer un trajet</h2>
+            <h2>Proposer un trajet :</h2>
+
 
             <form action="" method="post">
                 
