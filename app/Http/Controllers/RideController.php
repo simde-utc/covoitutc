@@ -8,9 +8,11 @@ use Illuminate\Support\Facades\DB;
 class RideController extends Controller
 {
     public function store() {
+        // Cette requête ne peut pas fonctionner pour l'instant car il faut un chauffeur
+        // Donc il faut gérer les profils
         $query = DB::table('users')->get();
         $test = request('depart');
-        DB::insert("INSERT INTO rides(departure, destination, day, hour, nb_seats) VALUES (:destination, :departure, :day, :hour, :nb_seats, :driver)", [
+        DB::insert("INSERT INTO rides(departure, destination, day, hour, nb_seats, driver) VALUES (:destination, :departure, :day, :hour, :nb_seats, :driver)", [
             'departure' => request('depart'),
             'destination' => request('destination'),
             'day' => request('date'),
