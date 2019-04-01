@@ -1,3 +1,11 @@
+h1 {
+    display: inline;
+}
+
+nav {
+    border: solid black 3px;
+}
+
 .content {
     margin-top: 100px;
 }
