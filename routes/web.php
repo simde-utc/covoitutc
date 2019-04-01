@@ -20,6 +20,7 @@ Route::get('/covoit', function () {
 });
 
 Route::post('/covoit', 'RideController@store');
+Route::post('/covoit/search', 'RideController@showAllRides');
 
 Route::get('/rides', 'RideController@showAllRides');
 
