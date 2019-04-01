@@ -11,9 +11,10 @@
     <script src="/js/functions.js"></script>
 </head>
 <body>
-    <h1 class="text-center">Covoit'UTC</h1>
     <nav class="navbar">
-    <button type="button" class="btn btn-default navbar-btn navbar-right">Sign in</button>
+    <button type="button" class="btn btn-warning navbar-btn navbar-right">ENT</button>
+    <h1 class="text-center">Covoit'UTC</h1>
+    <button type="button" class="btn btn-success navbar-btn navbar-right">Connexion</button>
     
     </nav>
     
