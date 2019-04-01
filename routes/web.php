@@ -21,4 +21,6 @@ Route::get('/covoit', function () {
 
 Route::post('/covoit', 'RideController@store');
 
+Route::get('/rides', 'RideController@showAllRides');
+
 
