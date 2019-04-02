@@ -22,14 +22,16 @@ class RideController extends Controller
 
         ]);
         $query = DB::table('users')->get();
-        /*return view('covoit', [
+        return view('covoit', [
             'req' => $query
-        ]);*/
-        return $query;
+        ]);
+        //return $query;
     }
 
     public function showAllRides() {
         $rides = DB::table('rides')->get();
-        return $rides;
+        return view('rides', [
+            'rides' => $rides
+        ]);
     }
 }
