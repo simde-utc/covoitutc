@@ -8,24 +8,34 @@ use Illuminate\Support\Facades\DB;
 class RideController extends Controller
 {
     public function store() {
-        // Cette requête ne peut pas fonctionner pour l'instant car il faut un chauffeur
-        // Donc il faut gérer les profils
-        $query = DB::table('users')->get();
-        $test = request('depart');
-        DB::insert("INSERT INTO rides(departure, destination, day, hour, nb_seats, driver) VALUES (:destination, :departure, :day, :hour, :nb_seats, :driver)", [
-            'departure' => request('depart'),
-            'destination' => request('destination'),
-            'day' => request('date'),
-            'hour' => request('time'),
-            'nb_seats' => request('nb_place'),
-            'driver' => "dummytest"
-
-        ]);
-        $query = DB::table('users')->get();
-        return view('covoit', [
-            'req' => $query
-        ]);
-        //return $query;
+        // Faut gérer les profils /!\
+        $tmp = request('recurrence');
+        if($tmp == 'null') {
+            DB::insert("INSERT INTO exceptionnel(id, depart, arrivee, jour, heure, places, chauffeur) VALUES (:id, :destination, :departure, :day, :hour, :nb_seats, :driver)", [
+                'id' => 10,
+                'departure' => request('departure'),
+                'destination' => request('destination'),
+                'day' => request('dateExc'),
+                'hour' => request('heureExc'),
+                'nb_seats' => request('nb_seats'),
+                'driver' => "lol"
+            ]);
+        } else {
+            DB::insert("INSERT INTO recurrents(id, depart, arrivee, places, heure, chauffeur, debut, type, jour, fin) VALUES(:id, :depart, :arrivee, :places, :heure, :chauffeur, :debut, :type, :jour, :fin)", [
+                'id' => 21,
+                'depart' => request('departure'),
+                'arrivee' => request('destination'),
+                'places' => request('nb_seats'),
+                'heure' => request('heure'),
+                'chauffeur' => 'lol',
+                'debut' => request('dateDebut'),
+                'type' => request('recurrence'),
+                'jour' => request('jourSemaine'),
+                'fin' => request('dateFin')
+            ]);
+        }
+        $query = DB::table('recurrents')->get();
+        return $query;
     }
 
     public function showAllRides() {
