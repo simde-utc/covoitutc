@@ -33,4 +33,6 @@ Route::post('/covoit/search', 'RideController@showAllRides');
 
 Route::get('/rides', 'RideController@showAllRides');
 
+//Route::get('/results', 'RideController@')
+
 
