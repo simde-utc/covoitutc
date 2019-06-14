@@ -11,7 +11,7 @@ if(isset($_POST['depart'])) {
 	
 foreach($rides as $ride) {
 ?>
-<a href="trajet.php?id=<?php echo $ride->id ?>">
+<a href="trajet/<?php echo $ride->id ?>">
 <div class="result mx-auto my-2 p-2 border rounded-lg">
 	<div class="container">
 		<div class="row">
