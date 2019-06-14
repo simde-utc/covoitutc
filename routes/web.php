@@ -35,6 +35,10 @@ Route::get('/rides', 'RideController@showAllRides');
 
 Route::post('/results', 'RideController@showRides');
 
+Route::get('/trajet/{id}', function($id) {
+    return view('trajet', ['id' => $id]);
+});
+
 //Route::get('/results', 'RideController@')
 
 
