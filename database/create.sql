@@ -11,7 +11,7 @@ CREATE TABLE Users(
 );
 
 CREATE TABLE Exceptionnel(
-    id int SERIAL,
+    id SERIAL,
     depart varchar(50) NOT NULL,
     arrivee varchar(50) NOT NULL,
     places int NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE Exceptionnel(
 
 
 CREATE TABLE Recurrents(
-    id int SERIAL PRIMARY KEY, 
+    id SERIAL PRIMARY KEY, 
     depart varchar(50) NOT NULL,
     arrivee varchar(50) NOT NULL,
     places int NOT NULL,
