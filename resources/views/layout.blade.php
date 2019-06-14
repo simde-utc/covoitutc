@@ -14,7 +14,7 @@
 	<div class="container-fluid p-0">
 		<div class="row border-bottom" id="header">
 			<div class="col-10">
-				<h1 class="display-3"><a href="index.php" id="title">Covoit'UT<img src="inc/logo.png" width="90" height="90" /></a></h1>
+				<h1 class="display-3"><a href="index.php" id="title">Covoit'UT<img src="logo.png" width="90" height="90" /></a></h1>
 			</div>
 			<div class="col text-center">
 				<a href="login.php" class="btn btn-warning btn-lg">Connexion</a>
