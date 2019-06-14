@@ -2,7 +2,8 @@
 @section('content')
 <div class="col-auto mx-auto text-center" id="content">
 <h1>Rechercher un covoiturage</h1>
-<form action="results.php" method="post">
+<form action="results" method="post">
+		{{ csrf_field() }}
 	<div class="form-group">
 		<div class="row">
 			<div class="col">

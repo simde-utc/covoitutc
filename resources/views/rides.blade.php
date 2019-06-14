@@ -5,10 +5,10 @@
 <div class="rides text-center">
     <h2>trajeeeets</h2>
     <ul>
-        <?php foreach($rides->all() as $ride) {
+        <?php foreach($rides as $ride) {
         ?><li>
         <?php
-            echo $rides->all()[0]->departure;
+            echo $ride->jour;
         ?>
         </li>
         <?php } ?>
@@ -16,7 +16,7 @@
 </div>
 
 <?php
-    echo $rides->all()[0]->id_ride;
+    echo $rides[0]->id;
 ?>
 
 @endsection
