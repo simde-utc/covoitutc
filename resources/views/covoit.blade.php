@@ -43,6 +43,31 @@
 
         <div id="searchRides" class="houdini">
             <h2>Chercher un trajet</h2>
+
+            <form action="covoit/search" method="post">
+                
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                <label for="depart">De</label>
+                <select name="depart" id="depart">
+                    <option value="compiegne">Compiègne</option>
+                    <option value="paris">Paris</option>
+                </select>
+
+                <label for="destination">à</label>
+                <select name="destination" id="destination">
+                    <option value="paris">Paris</option>
+                    <option value="compiegne">Compiègne</option>
+                </select>
+
+                <div id="rideDateBlock">
+                    <label for="date">Le</label>
+                    <input type="date" name="date">
+
+                </div>
+
+                <button type="submit" href="?search=true" class="btn btn-success">Chercher un trajet</button>
+            </form>
         </div>
     </div>
     

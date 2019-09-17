@@ -16,7 +16,29 @@ Route::get('/', function () {
 });
 
 Route::get('/covoit', function () {
-    return view('covoit');
+    return view('index');
+});
+
+Route::get('/add', function() {
+    return view('add');
+});
+Route::post('/add/ride', 'RideController@store');
+
+Route::get('/search', function() {
+    return view('search');
 });
 
 Route::post('/covoit', 'RideController@store');
+Route::post('/covoit/search', 'RideController@showAllRides');
+
+Route::get('/rides', 'RideController@showAllRides');
+
+Route::post('/results', 'RideController@showRides');
+
+Route::get('/trajet/{id}', function($id) {
+    return view('trajet', ['id' => $id]);
+});
+
+//Route::get('/results', 'RideController@')
+
+
