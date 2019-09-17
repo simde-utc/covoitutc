@@ -22,3 +22,7 @@ php artisan key:generate
 php artisan serve
 ```
 Pour la BDD on la crée à la main avec les fichiers SQL dans le dossier *database*.
+
+**Windows et Mac** \
+https://fr.wikihow.com/installer-Linux \
+:)
