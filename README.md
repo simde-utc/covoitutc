@@ -21,8 +21,12 @@ php artisan key:generate
 # Pour lancer le serveur
 php artisan serve
 ```
-Pour la BDD on la crée à la main avec les fichiers SQL dans le dossier *database*.
+Pour la BDD on la crée à la main avec le fichier SQL dans le dossier *database*.
 
 **Windows et Mac** \
-https://fr.wikihow.com/installer-Linux \
-:)
+https://fr.wikihow.com/installer-Linux
+
+## To do
+* Meilleure BDD
+* Trajets récurrents
+* Connexion au portail des assos
