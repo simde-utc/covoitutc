@@ -33,7 +33,7 @@ class RideController extends Controller
             ]);
         }
         $query = DB::table('exceptionnel')->get();
-        return $query;
+        return redirect('/covoit')->with('status', true);
     }
 
     public function showAllRides() {
