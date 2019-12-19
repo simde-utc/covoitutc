@@ -26,6 +26,13 @@
 	text-decoration: none;
 }
 
+/* Classes diverses */
+.force-to-bottom {
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+}
+
 /* Telephone */
 @media screen and (max-width: 767px) {
 	#content .btn{font-size: 5em;}
